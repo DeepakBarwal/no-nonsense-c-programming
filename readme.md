@@ -16,3 +16,7 @@ wget https://www.nayuki.io/res/tiny-png-output/TinyPngOut.c
 gcc -Wall -o image-gen image-gen.c TinyPngOut.c
 ./image-gen
 ```
+
+```bash
+gcc -Wall graphics.c -o graphics -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+```
