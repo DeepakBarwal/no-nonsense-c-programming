@@ -20,3 +20,11 @@ gcc -Wall -o image-gen image-gen.c TinyPngOut.c
 ```bash
 gcc -Wall graphics.c -o graphics -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 ```
+
+```bash
+time ./slow
+time ./fast
+diff slow.c fast.c
+gcc -S slow.c && gcc -S fast.c
+diff slow.s fast.s
+```
