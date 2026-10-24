@@ -8,7 +8,7 @@ int square(int n)
 int main()
 {
     int n = 1;
-    for (long i = 0; i < 1000000000; i++)
+    for (long i = 0; i < 3000000000; i++)
     {
         int square_result = square(n);
         n += square_result;
